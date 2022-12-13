@@ -1,11 +1,11 @@
 import { axiosClient } from "../../lib/axios-client";
-import { PostsResponse } from "./types";
+import { PostsGetResponse } from "./types";
 
 /**
  * GET /posts
  */
-export const getPosts = async () => {
-  const { data } = await axiosClient.request<PostsResponse>({
+export const fetchPosts = async () => {
+  const { data } = await axiosClient.request<PostsGetResponse>({
     url: "/posts",
     method: "GET",
   });

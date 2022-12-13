@@ -12,8 +12,9 @@ export const PostListPage = () => {
 
   return (
     <div>
-      {postsList?.map(({ title, body }) => (
-        <div>
+      {postsList?.map(({ id, title, body }) => (
+        <div key={id}>
+          <p>id: {id}</p>
           <p>title: {title}</p>
           <p>body: {body}</p>
         </div>

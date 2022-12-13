@@ -5,4 +5,4 @@ interface Posts {
   body: string;
 }
 
-export type PostsResponse = Posts[];
+export type PostsGetResponse = Posts[];

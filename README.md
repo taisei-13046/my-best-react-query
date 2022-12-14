@@ -1,6 +1,4 @@
-# my-best-react-query
-
-## ディレクトリ構成
+# ディレクトリ構成
 ```
 src
   ├ api // api層
@@ -21,3 +19,5 @@ src
   ├ main.tsx
   └ vite-env.d.ts
 ```
+
+# Qiita記事

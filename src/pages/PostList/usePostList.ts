@@ -1,6 +1,6 @@
 import { PostsGetResponse, usePostsQuery } from "../../api/posts";
 
-interface PostList {
+interface Post {
   id: number;
   title: string;
   body: string;
@@ -15,7 +15,7 @@ const postListTranslator = (data: PostsGetResponse) =>
 
 export const usePostList = () => {
   const { data: postsList, isLoading: isPostsListLoading } = usePostsQuery<
-    PostList[]
+    Post[]
   >({
     select: postListTranslator,
   });

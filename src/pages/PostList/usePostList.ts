@@ -6,7 +6,7 @@ interface Post {
   body: string;
 }
 
-const postListTranslator = (data: PostsGetResponse) =>
+const postListTranslator = (data: PostsGetResponse): Post[] =>
   data.map(({ id, title, body }) => ({
     id,
     title: title.toUpperCase(),
